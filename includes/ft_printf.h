@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 17:10:51 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/30 12:02:46 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/02 18:49:51 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # define STRING_FLAG ".hzjl0123456789 +-#*"
 
 # include <stdarg.h>
-# include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
 # include <stdlib.h>
