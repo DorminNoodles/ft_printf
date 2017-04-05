@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/10 18:50:34 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/17 16:37:28 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/05 02:33:13 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,6 @@ void	prefix_lossless(t_print *dna)
 
 int		prefix_lossy(t_print *dna)
 {
-	char	*tmp;
-	int		size;
-
 	ft_memcpy(dna->out, get_prefix(dna), prefix_count(dna));
 	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/09 09:38:43 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/21 18:45:03 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/05 03:16:35 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	pitch_ls(t_print *dna)
 	i = 0;
 	size = 0;
 	nbmax = 0;
-	while (size + ft_wcharlen(*(((wchar_t*)dna->out) + nbmax)) <= dna->pitch_nb)
+	while (size + (int)ft_wcharlen(*(((wchar_t*)dna->out) + nbmax)) <= dna->pitch_nb)
 	{
 		size += ft_wcharlen(*(((wchar_t*)dna->out) + nbmax));
 		nbmax++;

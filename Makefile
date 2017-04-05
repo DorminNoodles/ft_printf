@@ -98,6 +98,7 @@ LIBFT_SRCS = $(addprefix libft/,$(LIBFT_SRCS_NAME))
 LIBFT_OBJS = $(LIBFT_SRCS:.c=.o)
 CC = clang
 HEADER_LIB = libft/includes/libft.h
+FLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
 
@@ -107,7 +108,7 @@ $(NAME) : $(OBJS) $(HEADER_LIB)
 	ranlib $(NAME)
 
 %.o : srcs/%.c includes/ft_printf.h
-	$(CC) -c $< -o $@ -I includes -I libft/includes
+	$(CC) -c $< -o $@ -I includes -I libft/includes $(FLAGS)
 
 clean :
 	rm -f $(OBJS)

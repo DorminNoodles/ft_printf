@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 15:12:02 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/17 16:06:43 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/05 02:33:57 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ static void		wcharset(t_print *dna, wchar_t c, size_t sze)
 	int i;
 
 	i = 0;
-	while (i < sze)
+	while (i < (int)sze)
 	{
 		*(((wchar_t*)dna->out) + i) = c;
 		i++;
