@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/08 14:01:18 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/30 13:57:18 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:22:52 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int		parsing_dispatch(const char *format, t_print *dna, va_list ap)
 		return (1);
 	parsing_flags(format, dna, end);
 	parsing_width(format, dna, end);
-	parsing_pitch(format, dna, end, ap);
+	parsing_pitch(format, dna, end);
 	parsing_cast(format, dna, end);
 	parsing_star(format, dna, end, ap);
 	if (dna->pitch_nb < 0)

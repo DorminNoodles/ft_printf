@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 12:26:57 by lchety            #+#    #+#             */
-/*   Updated: 2017/04/05 02:25:49 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:24:44 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	conv_c(t_print *dna, va_list ap)
 {
 	char	c;
-	char	*tmp;
 
 	if (dna->pitch && !dna->pitch_nb)
 		dna->pitch = FALSE;

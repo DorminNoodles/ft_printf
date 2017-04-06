@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/17 11:34:31 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/21 16:07:18 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:20:16 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void		check_pitch(t_print *dna, t_bool *prefix)
 {
 	if (dna->pitch)
 		dna->flag_0 = FALSE;
-	if (dna->pitch && dna->pitch_nb > ft_strlen(dna->out))
+	if (dna->pitch && dna->pitch_nb > (int)ft_strlen(dna->out))
 	{
 		do_pitch(dna, FALSE);
 		if (!dna->conv_o)
@@ -27,7 +27,7 @@ static void		check_pitch(t_print *dna, t_bool *prefix)
 
 static void		check_width(t_print *dna, t_bool *prefix)
 {
-	if (dna->width && dna->width > ft_strlen(dna->out))
+	if (dna->width && dna->width > (int)ft_strlen(dna->out))
 	{
 		if (dna->flag_0)
 		{
@@ -70,17 +70,15 @@ char			*set_length_char(t_print *dna)
 		dna->out[0] = '\0';
 	dna->out = do_pitch(dna, TRUE);
 	ft_strlen(dna->out);
-	if (dna->width > ft_strlen(dna->out))
+	if (dna->width > (int)ft_strlen(dna->out))
 		dna->out = width_ectoplasme(dna, TRUE);
 	return (dna->out);
 }
 
 void			set_length_wchar(t_print *dna)
 {
-	wchar_t *tmp;
-
 	if (dna->pitch)
 		pitch_ls(dna);
-	if (dna->width > count_unicode((wchar_t*)dna->out))
+	if (dna->width > (int)count_unicode((wchar_t*)dna->out))
 		width_ls(dna);
 }

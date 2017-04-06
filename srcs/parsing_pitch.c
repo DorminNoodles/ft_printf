@@ -6,13 +6,13 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 14:15:17 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/21 18:34:11 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:20:45 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	parsing_pitch(const char *fmt, t_print *dna, char *end, va_list ap)
+void	parsing_pitch(const char *fmt, t_print *dna, char *end)
 {
 	int i;
 

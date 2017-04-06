@@ -25,7 +25,6 @@ NAME_SRCS =	ft_printf.c										\
 			conv_x.c										\
 			conv_u.c										\
 			conv_b.c										\
-			conv_f.c										\
 			conv_p.c										\
 			color.c
 

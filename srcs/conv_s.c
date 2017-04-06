@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 12:11:23 by lchety            #+#    #+#             */
-/*   Updated: 2017/03/28 14:41:14 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:23:16 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void	conv_ls(t_print *dna, va_list ap)
 {
 	wchar_t		*str;
 	int			size;
-	char		*test;
 	int			i;
 
 	i = 0;
