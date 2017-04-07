@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 17:09:10 by lchety            #+#    #+#             */
-/*   Updated: 2017/04/05 02:30:18 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:43:20 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,6 @@ void	convert_extended(t_print *dna, va_list ap)
 		dna->out = compute_conv_mod(dna);
 	else if (dna->conv_b)
 		conv_b(dna, ap);
-	else if (dna->conv_f)
-		conv_f(dna, ap);
 	else if (dna->conv_null)
 		compute_conv_null(dna);
 }

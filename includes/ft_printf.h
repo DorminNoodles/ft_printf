@@ -6,7 +6,7 @@
 /*   By: lchety <lchety@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 17:10:51 by lchety            #+#    #+#             */
-/*   Updated: 2017/04/06 11:21:02 by lchety           ###   ########.fr       */
+/*   Updated: 2017/04/06 11:42:34 by lchety           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,6 @@ void			conv_u(t_print *dna, va_list ap);
 void			conv_lu(t_print *dna, va_list ap);
 void			conv_b(t_print *dna, va_list ap);
 void			conv_p(t_print *dna, va_list ap);
-void			conv_f(t_print *dna, va_list ap);
 char			*ft_itoa_base(uintmax_t n, int base);
 char			*do_pitch(t_print *dna, t_bool cut);
 void			reset_print(t_print *dna);

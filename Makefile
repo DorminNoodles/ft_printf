@@ -1,5 +1,5 @@
 NAME = libftprintf.a
-TEST_SRC = try/main_test_proto.c
+TEST_SRC = main.c
 NAME_SRCS =	ft_printf.c										\
 			parsing.c										\
 			parsing_cast.c									\
@@ -122,4 +122,4 @@ re : fclean all
 test : $(NAME)
 	$(CC) $(TEST_SRC) -I includes -I libft/includes $(NAME) -o build/debug.out
 
-.PHONY : all, clean, fclean, test, re,
+.PHONY : all clean fclean test re
