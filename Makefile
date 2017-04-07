@@ -95,7 +95,7 @@ SRCS = $(addprefix srcs/,$(NAME_SRCS))
 OBJS = $(NAME_SRCS:.c=.o)
 LIBFT_SRCS = $(addprefix libft/,$(LIBFT_SRCS_NAME))
 LIBFT_OBJS = $(LIBFT_SRCS:.c=.o)
-CC = gcc
+CC = clang
 HEADER_LIB = libft/includes/libft.h
 FLAGS = -Wall -Wextra -Werror
 
